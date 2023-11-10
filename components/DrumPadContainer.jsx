@@ -16,6 +16,7 @@ class DrumPadContainer extends React.Component {
                 return <DrumPad
                     sound={path + sounds[i]}
                     id={letter}
+                    key={letter}
                 >
 
                 </DrumPad>

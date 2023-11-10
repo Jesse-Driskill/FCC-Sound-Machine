@@ -1,4 +1,6 @@
 import React from "react";
+import Display from "./Display";
+
 
 class DisplayContainer extends React.Component {
     constructor(props) {
@@ -6,7 +8,9 @@ class DisplayContainer extends React.Component {
     }
 
     render() {
-        return <div id="display-container">Hello world!</div>
+        return <div id="display-container">Display Container
+            <Display/>
+        </div>
     }
 }
 

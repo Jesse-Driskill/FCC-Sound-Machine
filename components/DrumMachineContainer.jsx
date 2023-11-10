@@ -8,7 +8,6 @@ class DrumMachineContainer extends React.Component {
 
     render() {
         return (<div id="drum-machine-container">
-
             <DrumMachine/>
 
         </div>)

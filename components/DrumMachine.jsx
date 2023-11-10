@@ -1,5 +1,6 @@
 import React from "react";
 import DrumPadContainer from "./DrumPadContainer";
+import DisplayContainer from "./DisplayContainer";
 
 class DrumMachine extends React.Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class DrumMachine extends React.Component {
     render() {
         return (<div id="drum-machine">
             <DrumPadContainer/>
+            <DisplayContainer/>
         </div>)
     }
 }
