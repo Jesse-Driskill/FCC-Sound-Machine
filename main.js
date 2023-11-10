@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import DrumMachineContainer from "./components/DrumMachineContainer";
 
 class App extends React.Component {
     constructor(props) {
@@ -7,7 +8,11 @@ class App extends React.Component {
     }
 
     render() {
-        return (<h1>React is working!</h1>)
+        return (<div id="app">
+
+            <DrumMachineContainer/>
+
+        </div>)
     }
 }
 
