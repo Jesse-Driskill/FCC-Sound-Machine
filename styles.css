@@ -43,3 +43,19 @@ body {
     margin-right: 4vh;
 }
 
+input {
+    display: none;
+}
+
+[tabIndex="0"]:focus {
+    /* outline: none; */
+    border: 10px green solid;
+}
+
+#app {
+    min-width: 99vw;
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

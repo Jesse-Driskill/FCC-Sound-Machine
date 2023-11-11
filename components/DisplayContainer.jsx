@@ -1,5 +1,8 @@
 import React from "react";
 import Display from "./Display";
+import { mapStateToProps } from "../redux/redux";
+import { connect } from "react-redux";
+
 
 
 class DisplayContainer extends React.Component {
@@ -9,10 +12,10 @@ class DisplayContainer extends React.Component {
 
     render() {
         return <div id="display-container">Display Container
-            <Display/>
+            <Display display={this.props.display}/>
         </div>
     }
 }
 
 
-export default DisplayContainer;
+export default connect(mapStateToProps, null)(DisplayContainer);

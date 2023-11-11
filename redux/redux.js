@@ -1,8 +1,15 @@
 export const CHANGE = "CHANGE";
+export const PLAY = "PLAY";
 
 export const changeDisplay = (audioType) => {
     return {
         type: CHANGE, display: audioType
+    }
+}
+
+export const playAudio = (audioElementId) => {
+    return {
+        type: PLAY, audioElementId: audioElementId
     }
 }
 
@@ -13,6 +20,9 @@ export const displayReducer = (state = {display: ""}, action) => {
                 display: action.display
             }
             break;
+        case PLAY: {
+            break;
+        }
         default:
             return state;
     }
@@ -26,6 +36,6 @@ export const mapStateToProps = (state) => {
 
 export const mapDispatchToProps = (dispatch) => {
     return {
-        changeDisplay: () => {dispatch(changeDisplay)}
+        changeDisplay: (audioType) => {dispatch(changeDisplay(audioType))}
     }
 }
