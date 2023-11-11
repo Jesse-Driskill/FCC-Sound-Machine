@@ -48,8 +48,8 @@ input {
 }
 
 [tabIndex="0"]:focus {
-    /* outline: none; */
-    border: 10px green solid;
+    outline: none;
+    /* border: 10px green solid; */
 }
 
 #app {
@@ -58,4 +58,12 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#display-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 10vw;
 }

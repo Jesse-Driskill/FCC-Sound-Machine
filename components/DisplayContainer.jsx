@@ -11,7 +11,7 @@ class DisplayContainer extends React.Component {
     }
 
     render() {
-        return <div id="display-container">Display Container
+        return <div id="display-container">
             <Display display={this.props.display}/>
         </div>
     }
